@@ -77,7 +77,7 @@ fn create_routes() -> HashMap<String, Route> {
     routes
 }
 
-pub fn dispatcher(stream: TcpStream, &request: Request)  {
+pub fn dispatcher(stream: TcpStream, request: Request)  {
     //for now, we will hardcode the routes
     let routes = create_routes();
 

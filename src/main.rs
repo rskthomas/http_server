@@ -21,7 +21,7 @@ use routes::dispatcher;
 
 fn main() {
     //initial configuration
-    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    let listener = TcpListener::bind("127.0.0.1:80").unwrap();
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
@@ -43,7 +43,7 @@ fn handle_connection(mut stream: TcpStream) {
    
     let request:Request = Request::construct(&raw_request);
     request.display();
-    dispatcher(stream, &request);
+    dispatcher(stream, request);
 
 
 }
