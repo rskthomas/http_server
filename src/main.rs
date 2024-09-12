@@ -21,7 +21,7 @@ use routes::dispatcher;
 
 fn main() {
     //initial configuration
-    let listener = TcpListener::bind("127.0.0.1:80").unwrap();
+    let listener = TcpListener::bind("0.0.0.0:80").unwrap();
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
