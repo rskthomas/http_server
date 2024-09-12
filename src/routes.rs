@@ -54,6 +54,16 @@ fn create_routes() -> HashMap<String, Route> {
         },
     );
     routes.insert(
+        "/resume".to_string(),
+        Route {
+            allows: AllowedMethods {
+                get: true,
+                post: false,
+            },
+            file: "resources/html/resume.html".to_string(),
+        },
+    );
+    routes.insert(
         "/styles.css".to_string(),
         Route {
             file: "resources/static/css/styles.css".to_string(),
@@ -73,6 +83,7 @@ fn create_routes() -> HashMap<String, Route> {
             },
         },
     );
+    
 
     routes
 }
