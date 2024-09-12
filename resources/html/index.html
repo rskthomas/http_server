@@ -1,14 +1,174 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>This is me</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>This is me</h1>
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Resume of Thomas Rusiecki" />
+    <title>Thomas Rusiecki - Resume</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+
+  </head>
+  <body>
+    <div class="content">
+      <h1>Welcome to my website!</h1>
+
+      <h2>I'm Thomas Rusiecki</h2>
+      <hr class="hr" />
+
+      <p>
+        🧉 Entry-Level Developer | Rust Enthusiast | Computer Science Student
+      </p>
+
+      <div class="contact-info">
+        <p>
+          Email:
+          <a href="mailto:rusieckithomas@gmail.com">rusieckithomas@gmail.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/thomas-nahuel-r-b1756b21a/"
+            target="_blank"
+            >linkedin.com/in/thomas-nahuel-r-b1756b21a</a
+          >
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/rskthomas" target="_blank"
+            >github.com/rskthomas</a
+          >
+        </p>
+      </div>
+      <hr class="hr" />
+
+      <section class="about">
+        <h2>About Me</h2>
+        <p>
+          Hello, I'm Thomas Rusiecki, a B.Sc. computer science student from
+          Argentina 🧉 looking for an entry-level developer job where I can learn and grow as a developer.
+        </p>
+        <p>
+          I've got a love for Rust and a avid defender of the C programming language. I'm also a big fan of Python and its ecosystem, given it is simple to use and has a lot of libraries for almost anything. 
+          Im confident in my ability to learn new languages and technologies quickly, so I'm always looking for new technologies to learn.
+        </p>
+        <p>
+            While design and front-end GUI development are not my strong suits, I'm passionate about back-end development, data management, and algorithm implementation.
+        </p>
+
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <p>
+          Here are some of the skills I've picked up over my time as a student:
+        </p>
+        <ul>
+          <li>Fluent english & spanish</li>
+          <li>Python, used mostly on the backend (Flask)</li>
+          <li>Rust & C Programming</li>
+          <li>Git & GitHub & GitLab</li>
+          <li>SQL (mostly MySQL)</li>
+          <li>Docker</li>
+          <li>Android Development (using Kotlin and Compose)</li>
+          <li>
+            Some HTML & CSS & <a href="#" onclick="popup()">JavaScript</a>
+          </li>
+          <li>
+            Java & PHP (these may be a bit rusty but I'm confident in relearning
+            them fairly quickly)
+          </li>
+          <li>Agile Methodologies (Scrum)</li>
+          <li>Done some fiddling with OpenMP, MPI, and POSIX threads</li>
+        </ul>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+        <p><b>Internship: I-D LINTI 2024</b></p>
+        <p>
+          Worked at the circular economy facility <a href="https://ekoa.unlp.edu.ar/" target="_blank">EKOA</a> - University of La Plata,
+          on testing and implementation of
+          <a href="https://github.com/eReuse/devicehub-teal " target="_blank"
+            >DeviceHub-TEAL</a
+          >
+          for the inventory and workflow of recycled electronic devices.
+        </p>
+        <br />
+        <p><b>Project: Accessible Communicator</b></p>
+        <p>
+          An Android app that allows people with speech disabilities to
+          communicate using a smartphone. Done as part of the class "User
+          Experience Design" at the University of La Plata.
+        </p>
+        <p>
+          Currently working on implementing a simple hand gesture recognition
+          system using the smartphone's camera & Google's ML Kit.
+        </p>
+        <p>
+          The repo can be found here
+          <a
+            href="https://github.com/rskthomas/comunicador_accesible "
+            target="_blank"
+            >github.com/rskthomas/comunicador_accesible</a
+          >
+        </p>
+        <br />
+        <p><b>Project: HTTP Server in Rust</b></p>
+        <p>
+          Following the book "The Rust Programming Language", I'm developing a
+          simple Rust HTTP server for educational purposes, it's running this
+          site right now!
+        </p>
+        <p>
+          The idea is to build a full-fledged HTTP 1.0 server following RFC
+          1945.
+        </p>
+        <p>
+          The repo can be found here
+          <a href="https://github.com/rskthomas/http_server " target="_blank"
+            >github.com/rskthomas/http_server</a
+          >
+        </p>
+        <br />
+
+        <p><b>Project: File transfer in C using sockets</b></p>
+        <p>
+          Currently developing two simple file transfer programs using sockets
+          in C for the class "Distributed Systems" at the University of La
+          Plata.
+        </p>
+        <p>
+          One of them is using TCP and the other one is using UDP, the idea is
+          to compare the performance of both protocols.
+        </p>
+        <p>
+          The repo can be found here
+          <a href="https://github.com/rskthomas/tpi " target="_blank"
+            >github.com/rskthomas/tpi</a
+          >
+        </p>
+        <br />
+        <p><b>Project: Flask webapp for a sports social club </b></p>
+        <p>
+          in a team of three we built a full-stack application. We used a range of web technologies, including: Python (Flask), Javascript, HTML, CSS, Vue. 
+          I was, along with a partner, in charge of the backend development, the database design, and the API implementation.
+        </p>
+        <p>
+          The app allows users to register as mnembers, login, and enroll in activities. It also allows the admin to manage the activities and the users.
+        </p>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <p>Bachelor of Science in Computer Science</p>
+        <p>University of La Plata, Argentina</p>
+        <p>Expected graduation year: 2025</p>
+      </section>
+
+      <footer>
+        <p><small>© 2024 Thomas Rusiecki</small></p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
