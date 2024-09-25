@@ -3,7 +3,7 @@ use crate::handlers::get::handle_get;
 use crate::handlers::post::handle_post;
 use crate::http::{Method, Request};
 use std::net::TcpStream;
-use std::{collections::HashMap, hash::Hash};
+use std::collections::HashMap;
 
 pub struct Route {
     allows: AllowedMethods,
@@ -63,6 +63,17 @@ fn create_routes() -> HashMap<String, Route> {
             file: "resources/html/resume.html".to_string(),
         },
     );
+    routes.insert(
+        "/resume_es".to_string(),
+        Route {
+            allows: AllowedMethods {
+                get: true,
+                post: false,
+            },
+            file: "resources/html/resume_es.html".to_string(),
+        },
+    );
+
     routes.insert(
         "/styles.css".to_string(),
         Route {
