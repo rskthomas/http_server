@@ -7,7 +7,9 @@ body {
     padding: 20px;
     color: #150303;
   }
-  
+    .right-align {
+        text-align: right;
+    }
   .content {
     max-width: 800px;
     margin: 0 auto;
